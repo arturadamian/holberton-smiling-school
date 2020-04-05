@@ -289,7 +289,10 @@ h5 {
     font-size: var(--font-size-xx-small);
     line-height: var(--line-height-navbar);
 }
-
+.hero-pricing-title a:hover,
+.hero-pricing-title a:active {
+        text-decoration: none;
+} 
 @media screen and (max-width: 576px) {
     .section-hero-pricing h2 {
         font-size: var(--font-size-h2-mobile);
@@ -303,10 +306,6 @@ h5 {
         width: 170px;
         height: 50px;
     }
-    .hero-pricing-title a:hover,
-    .hero-pricing-title a:active {
-        text-decoration: none;
-    } 
 }
 /* ============================================================
     1-2. SECTION FAQ

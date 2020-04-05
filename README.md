@@ -11,13 +11,13 @@ Here the final result:
 - Web pages must switch to the tablet version when the screen width is 768px
 - Web pages must switch to the mobile version when the screen width is 576px
 
-## Here are som main tasks of this project
+## Here are some main tasks of this project
 
 ### Header first
 
 *Let’s start by the Homepage:  *create the header/hero piece*
 
-![final](images-2/final.jpg)
+![final](images-2/header.png)
 
 ![final](images-2/mobil.gif)
 

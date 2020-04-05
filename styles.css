@@ -1,0 +1,378 @@
+/**
+    == HOMEPAGE ==
+    
+    1. VARIABLES
+    2. BASE
+    3. HEADER / HERO
+    4. CAROUSEL
+    5. VIDEO CAROUSEL
+    6. FREE MEMBERSHIP
+    7. FOOTER
+    
+    == PRICING ==
+    
+    1-1. HEADER / HERO
+    1-2. SECTION FAQ
+    
+    == COURSES ==
+    
+    2-1. HEADER / HERO
+    2-2. SECTION NAVBAR
+  
+**/
+
+/* ============================================================
+    1. VARIABLES
+    ============================================================ */
+    
+:root {
+    --color-not-purple: #C271FF;
+    --color-white: white;
+    --color-copyright:  #FFFFFF;
+    --color-search-menu: #d7aef7;
+    --color-faq:  rgba(7, 22, 41, 0.501584);
+    --color-ok: rgba(158, 255, 47, 0.699);
+    
+    --box-shadow-color:  rgba(58, 57, 57, 0.808);
+    --background-color-membership:  #071629;
+    
+    
+    --opacity-button-hover: 0.9;
+    --opacity-search-menu: 0.6;
+    --opacity-copyright: 0.35;
+    
+    --font-size-xx-small: 12px;
+    --font-size-x-small: 14px;
+    --font-size-small: 16px;
+    --font-size-medium: 18px;
+    --font-size-carousel: 22px;
+    --font-size-h2-mobile: 24px;
+    --font-size-ok: 28px;
+    --font-size-social-icons: 30px;
+    --font-size-h2: 32px;
+    --font-size-full-price: 44px;
+    --font-size-mobile-title: 61px;
+    --font-size-pricing-title: 60px;
+    --font-size-hero-title: 120px;
+    
+    --font-weight-light: 300;
+    
+    --line-height-navbar: 15px;
+    --line-height-xx-small: 18px;
+    --line-height-x-small: 20px;
+    --line-height-small: 24px;
+    --line-height-medium: 26px;
+    --line-height-x-medium: 27px;
+    --line-height-h2-mobile: 30px;
+    --line-height-carousel: 34px;
+    --line-height-h2: 40px;
+    --line-height-full-price: 55px;
+    --line-height-mobile-title: 77px;
+    --line-height-pricing-title: 75px;
+    --line-height-hero-title: 151px;
+    
+    --border-radius-button: 40px;
+    
+    --background-position-mobile: 37%;
+    
+    --padding-carousel-item: 0 8rem 0 8rem;
+    --padding-carousel-item-mobile: 0 5rem 0 5rem;
+    
+    --margin-top-carousel-control-mobile: -15rem;
+    
+}
+
+/* ============================================================
+    2. BASE
+    ============================================================ */
+body {
+    font-family: 'Source Sans Pro', Helvetica, serif;
+    font-style: normal;
+}
+h1 {
+    font-size: var(--font-size-hero-title);
+    line-height: var(--line-height-hero-title);
+}
+h2 {
+    font-size: var(--font-size-h2);
+    line-height: var(--line-height-h2);
+}
+h5 {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-x-small);
+}
+.btn {
+    width: 162px;
+    height: 44px;
+    background-color: var(--color-not-purple);
+    border-radius: var(--border-radius-button);
+    font-size: var(--font-size-x-small);
+    line-height: var(--line-height-xx-small);
+}
+.btn:hover, .btn:active {
+    opacity: var(--opacity-button-hover);
+}
+.not-purple-word { 
+    color: var(--color-not-purple);
+}
+
+/* ============================================================
+    3. HEADER / HERO
+    ============================================================ */
+
+.header {
+    background: url(images-2/pic_1.jpg) no-repeat center center / cover;
+}
+.navicon {
+    font-family: 'holberton_school-icon';
+    font-size: var(--font-size-carousel);
+}
+.navicon:hover, .navicon:active, .navicon:focus {
+    outline: none;
+}
+.navbar-header {
+    align-content: flex-end !important;
+}
+
+.navbar-header .nav-item .nav-link {
+    font-size: var(--font-size-xx-small);
+    line-height: var(--line-height-navbar);
+    color: var(--color-white);
+    display: block;
+    border-bottom: 2px solid transparent;
+}
+.navbar-header .nav-item .nav-link:hover,
+.navbar-header .nav-item .nav-link:active {
+        color: var(--color-not-purple);
+        border-bottom: 2px solid var(--color-white);
+
+}
+
+.section-hero .btn {
+    box-shadow: 0 5px 15px 5px var(--box-shadow-color);
+}
+.navbar-hero .nav-item {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-x-small);
+}
+.navbar-hero .list-group-item p:first-of-type {
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-x-medium);
+}
+.navbar-hero .list-group-item p:last-of-type {
+    font-size: var(--font-size-small);
+    line-height: var(--line-height-small);
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        background-position: var(--background-position-mobile);
+    }
+    .hero-title > h1 {
+        font-size: var(--font-size-mobile-title);
+        line-height: var(--line-height-mobile-title);
+    }
+}
+/* ============================================================
+    4. CAROUSEL
+    ============================================================ */
+.car-quotes {
+    background: var(--color-not-purple);
+}
+.item-car {
+    padding: var(---padding-carousel-item);
+}
+.item-car p {
+    font-size: var(--font-size-carousel);
+    line-height: var(--line-height-carousel);
+}
+@media screen and (max-width: 767px) {
+    .item-car {
+        padding: var(--padding-carousel-item-mobile);
+    }
+}
+@media screen and (max-width: 576px) {
+    .car-contr-q {
+        margin-top:  var(--margin-top-carousel-control-mobile) !important;
+    }
+    .item-car {
+        padding: 0;
+    }   
+}
+/* ============================================================
+    5. VIDEO CAROUSEL
+    ============================================================ */
+
+.card, .card-body {
+    width: 256px;
+}
+.card-text {
+    font-size: var(--font-size-x-small);
+    line-height: var(--line-height-small);
+}
+
+.play-btn {
+    margin: 1rem 0 0 6rem;
+}   
+
+/* ============================================================
+    6. FREE MEMBERSHIP
+    ============================================================ */
+.section-membership {
+    background: var(--background-color-membership);
+}
+.section-membership .list-group-item {
+    max-width: 257px;
+    max-height: 153px;
+}
+.section-membership .list-group-item p:first-of-type {
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-medium);
+}
+.section-membership .list-group-item p:last-of-type {
+    font-size: var(--font-size-x-small);
+    line-height: var(--line-height-medium);
+}
+
+/* ============================================================
+    7. FOOTER
+    ============================================================ */
+.footer {
+    background: var(--background-color-membership);
+}
+.copyright {
+    color: var(--color-copyright);
+    opacity: var(--opacity-copyright);
+}
+.social {
+    font-family: 'holberton_school-icon';
+    font-size: var(--font-size-social-icons);
+}
+@media screen and (max-width: 576px) {
+    .social .nav-item + .nav-item {
+        margin-left: -1rem;
+    }  
+}
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    PRICING PAGE
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    
+/* ============================================================
+    1-1. HEADER / HERO
+    ============================================================ */
+.header-pricing {
+    background: url(images-2/pic_2.jpg) no-repeat center center / cover;
+}
+.section-hero-pricing h1{
+    font-size: var(--font-size-pricing-title);
+    line-height: var(--line-height-pricing-title);
+}
+.pricing-grid .border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.247) !important;
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box;
+}
+.pricing-grid .ok {
+    font-family: "holberton_school-icon";
+    font-size: var(--font-size-ok);
+    color: var(--color-ok);
+}
+.pricing-grid p {
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-carousel);
+}
+.pricing-grid .full-price {
+    font-size: var(--font-size-full-price);
+    line-height: var(--line-height-full-price);
+}
+.pricing-grid .payment {
+    font-size: var(--font-size-xx-small);
+    line-height: var(--line-height-navbar);
+}
+
+@media screen and (max-width: 576px) {
+    .section-hero-pricing h2 {
+        font-size: var(--font-size-h2-mobile);
+        line-height: var(--line-height-h2-mobile);
+    }
+    .hero-pricing-title .smile img {
+        width: 31px;
+        height: 22px;
+    }
+    .hero-pricing-title .logo img {
+        width: 170px;
+        height: 50px;
+    }
+        
+}
+/* ============================================================
+    1-2. SECTION FAQ
+    ============================================================ */
+    
+    .section-faq [class*="col"] p:first-of-type {
+        font-size: var(--font-size-small);
+        line-height: var(--line-height-x-small);
+    }
+    .section-faq [class*="col"] p:last-of-type {
+        font-size: var(--font-size-x-small);
+        line-height: var(--line-height-small);
+        color:var(--color-faq);
+    }
+    .section-faq h2 {
+        font-size: var(--font-size-pricing-title);
+        line-height: var(--line-height-pricing-title);
+    }
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+     COURSES PAGE
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+    
+/* ============================================================
+    2-1. HEADER / HERO
+    ============================================================ */
+    .header-courses {
+        background: url(images-2/pic_3.jpg) no-repeat center center / cover;
+    }
+    .courses-title {
+        font-family: "coiny";
+        font-size: 32px;
+        line-height: 35px;
+        width: 480px;
+        height: 70px;
+    }
+    /* ============================================================
+        2-2. SEARCH NAVBAR
+        ============================================================ */
+    .search-navbar {
+        background: var(--color-not-purple);
+    }
+    
+    input[type="search"]::-webkit-input-placeholder {
+        color: var(--color-white);
+        opacity: 0.6;
+        border: none;
+    }
+    input[type="search"]:focus {
+        background: #ca94f3;
+    }
+   .srch-icon {
+    font-family: 'holberton_school-icon';
+    font-size: 25px;
+    background: var(--color-search-menu);
+    color: var(--color-white);
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+    opacity: 0.6;
+   }
+  
+   .drpdn-menu {
+    background: var(--color-search-menu);
+    font-size: 23px;
+    line-height: 29px;
+    font-weight: var(--font-weight-light);
+    color: var(--color-white);
+    opacity: var(--opacity-search-menu);
+    border: none;
+    border-radius: 0px 0px 0px 0px;
+    border-bottom: 1px solid var(--color-white);
+   }
+        

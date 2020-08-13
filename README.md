@@ -68,6 +68,8 @@ Dropdown is a nice way to create filters.
 ![final](images-2/footer.png)
 
 
-
 ### Author
 * Artur Adamian | [GitHub](https://github.com/arturadamian) | [Twitter](https://twitter.com/arturadamian) | [LinkedIn](https://www.linkedin.com/in/arturadamian/)
+
+Hi, I am Artur. I am a Software Engineer student at Holberton School where I currently study Web Development and polish my knowleges in low-level and object-oriented programming, as well as developing strong professional communication skills.
+

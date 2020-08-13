@@ -71,5 +71,5 @@ Dropdown is a nice way to create filters.
 ### Author
 * Artur Adamian | [GitHub](https://github.com/arturadamian) | [Twitter](https://twitter.com/arturadamian) | [LinkedIn](https://www.linkedin.com/in/arturadamian/)
 
-Hi, I am Artur. I am a Software Engineer student at Holberton School where I currently study Web Development and polish my knowleges in low-level and object-oriented programming, as well as developing strong professional communication skills.
+Hi, I am Artur. I am a Software Engineer Student at Holberton School where I currently study Web Development and polish my knowleges in Low-Level and Object-Oriented programming, as well as developing strong professional communication skills.
 

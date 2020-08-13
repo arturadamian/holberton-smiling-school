@@ -66,3 +66,8 @@ Dropdown is a nice way to create filters.
 ### Close the page with a footer
 
 ![final](images-2/footer.png)
+
+
+
+### Author
+* Artur Adamian | [GitHub](https://github.com/arturadamian) | [Twitter](https://twitter.com/arturadamian)
